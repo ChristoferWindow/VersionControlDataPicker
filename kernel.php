@@ -1,12 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
+set_exception_handler('exceptionHandler');
+
+use GuzzleHttp\Client;
+use src\GuzzleApiClient;
+use src\VersionControl\VersionControlAdapterFactory;
+
 /**
  * Position in argv array, omitting file name at 0 index
  */
-$index = 1;
+$index = 0;
 $arguments = $argv;
 $argumentsCount = $argc;
 
+/**
+ * Removing file name from arguments array
+ */
+array_shift($arguments);
+
+const OPTION_NAME_SERVICE = 'service';
 const VERSION_CONTROL_NAME_GITHUB = 'github';
 
 const AVAILABLE_VERSION_CONTROL_SERVICES = [
@@ -15,14 +29,38 @@ const AVAILABLE_VERSION_CONTROL_SERVICES = [
 
 $versionControlName = VERSION_CONTROL_NAME_GITHUB;
 $isServiceOption = false;
-$service = getopt('', ['service::']);
+$service = getopt('', [OPTION_NAME_SERVICE . '::']);
+
+if (!isCorrectArgumentsNumber($argumentsCount)) {
+    throw new Exception(
+        'Too few or too many arguments passed. Try passing parameters:'
+        . PHP_EOL
+        .'1: user/repo branch'
+        . PHP_EOL
+        . '2: service=service_name user/repo branch'
+        . PHP_EOL
+    );
+}
 
 /**
  * If service=xxx option passed, increase index and omit 1 position
  */
 if (!empty($service)) {
-    $index++;
+    array_shift($arguments);
     $isServiceOption = true;
+}
+
+if (!$isServiceOption) {
+    if (!isFirstArgumentUserRepo($arguments[$index])) {
+        throw new Exception(
+            'Invalid first argument passed. Try passing parameters:'
+            . PHP_EOL
+            .'1: user/repo branch'
+            . PHP_EOL
+            . '2: service=service_name user/repo branch'
+            . PHP_EOL
+        );
+    }
 }
 
 /**
@@ -30,30 +68,41 @@ if (!empty($service)) {
  */
 $repoCredentials = explode('/', $arguments[$index]);
 
-$errorMessages = validateInput($argumentsCount, $arguments, $index, $isServiceOption, $repoCredentials);
-$branch = $arguments[$index + 1];
+/** Removing user/repo argument */
+array_shift($arguments);
 
-if(!empty($errorMessages)) {
-    displayErrors($errorMessages);
-    die;
+if (!isValidRepoCredentials($repoCredentials)) {
+    throw new Exception(
+        'Invalid repo credentials format passed, correct format is user/repo'
+        . PHP_EOL
+    );
 }
 
 $login = $repoCredentials[0];
 $repo = $repoCredentials[1];
 
+if(empty($arguments)) {
+    throw new Exception(
+        'Branch has not been specified'
+    );
+}
+
+$branch = end($arguments);
+
 if ($isServiceOption) {
-    $versionControlName = $service[0];
+    $versionControlName = $service['service'];
 }
 
 if(in_array($versionControlName, AVAILABLE_VERSION_CONTROL_SERVICES)) {
-    $adapter = versionControlAdapterFactory($versionControlName,$login, $repo, $branch);
-    print($adapter->getLatestCommitSha());
+  getLatestCommitSha($versionControlName, $login, $repo, $branch);
+} else {
+    throw new Exception('Not found version control: ' . $versionControlName);
 }
 
 
 function isCorrectArgumentsNumber(int $argumentsCount): bool
 {
-    return ($argumentsCount === 2 || $argumentsCount === 3) ? true : false;
+    return ($argumentsCount < 3 || $argumentsCount > 4) ? false : true;
 }
 
 function isFirstArgumentUserRepo(string $firstArgument): bool
@@ -79,65 +128,17 @@ function isValidRepoCredentials(array $repoCredentials): bool
     return false;
 }
 
-function versionControlAdapterFactory(
-    string $versionControlName,
-    string $login,
-    string $repo,
-    string $branch
-): VersionControlAdapter {
-    switch($versionControlName) {
-        case VERSION_CONTROL_NAME_GITHUB:
-            return new GithubVersionControlAdapter(new \GuzzleHttp\Client(), $login, $repo, $branch);
-            break;
-    }
-}
 
-function validateInput(int $argumentsCount, array $arguments, int $index, bool  $isServiceOption, array $repoCredentials
-): array {
-    $errorMessageBag = [];
-
-    /** If no arguments passed, quit validation*/
-    if($argumentsCount === 1) {
-        $errorMessageBag ['no_arguments'] = 'No arguments passed';
-        return $errorMessageBag;
-    }
-    if (!isCorrectArgumentsNumber($argumentsCount)) {
-        $errorMessageBag['arguments_count'] =
-            'Too few or too many arguments passed. Try passing parameters:'
-            . PHP_EOL
-            .'1: user/repo branch'
-            . PHP_EOL
-            . '2: service=service_name user/repo branch'
-            . PHP_EOL
-        ;
-    };
-
-    if (!$isServiceOption) {
-        if (!isFirstArgumentUserRepo($arguments[$index])) {
-            $errorMessageBag['first_argument'] =
-                'Invalid first argument passed. Try passing parameters:'
-                . PHP_EOL
-                .'1: user/repo branch'
-                . PHP_EOL
-                . '2: service=service_name user/repo branch'
-                . PHP_EOL
-            ;
-        }
-    }
-
-    if (!isValidRepoCredentials($repoCredentials)) {
-        $errorMessageBag['repo_format'] =
-            'Invalid repo credenitals format passed, correct format is user/repo'
-            . PHP_EOL
-        ;
-    }
-
-    return $errorMessageBag;
-}
-
-function displayErrors(array $errorMessages): void
+function exceptionHandler($exception): void
 {
-    foreach ($errorMessages as $errorMessage) {
-        print($errorMessage);
-    }
+    print($exception->getMessage());
+    die;
+}
+
+function getLatestCommitSha(string $versionControlName, string $login, string $repo, string $branch): string
+{
+     $factory  = new VersionControlAdapterFactory(new GuzzleApiClient(new Client()),$login, $repo, $branch);
+     $versionControl = $factory->createByName($versionControlName);
+
+     print $versionControl->getLatestCommitSha();
 }

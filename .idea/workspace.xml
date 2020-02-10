@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be737a55-0f61-43f5-9789-fcf23ba3dabd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GithubVersionControlAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InvalidResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VersionControlAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VersionControlService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VersionControlUrlCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApiClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GuzzleApiClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlAdapterFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GithubVersionControlAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/GithubVersionControlAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VersionControlAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlAdapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VersionControlService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VersionControlUrlCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlUrlCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,90 +26,82 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VersionControlAdapter.php">
+        <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlAdapter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding>
+                <element signature="e#86#106#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GithubVersionControlAdapter.php">
+        <entry file="file://$PROJECT_DIR$/src/VersionControl/GithubVersionControlAdapter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="139" column="33" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
+              <folding>
+                <element signature="e#77#99#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kernel.php">
+        <entry file="file://$PROJECT_DIR$/src/GuzzleApiClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VersionControlService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="827" column="9" selection-start-line="827" selection-start-column="9" selection-end-line="827" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VersionControlUrlCommand.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InvalidResponse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/VersionControlAdapterTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding>
-                <element signature="e#33#75#0#PHP" expanded="true" />
+                <element signature="e#49#63#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlAdapterFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-142">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlUrlCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-725">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -114,11 +112,21 @@
     <findStrings>
       <find>phpunit</find>
       <find>string</find>
+      <find>request</find>
+      <find>ction request(</find>
+      <find>namespace VersionControlDataPicker\VersionControl</find>
+      <find>namespace VersionControllDataPicker\VersionControl;</find>
+      <find>namespace VersionControl</find>
+      <find>namespace VersionControl;</find>
       <find>@var</find>
+      <find>var_d</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>private</replace>
+      <replace>namespace VersionControl</replace>
+      <replace>namespace VersionControl;</replace>
+      <replace>namespace src\VersionControl;</replace>
       <replace>@var string</replace>
     </replaceStrings>
   </component>
@@ -137,7 +145,15 @@
         <option value="$PROJECT_DIR$/VersionControlService.php" />
         <option value="$PROJECT_DIR$/GithubVersionControlAdapter.php" />
         <option value="$PROJECT_DIR$/VersionControlAdapter.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php" />
+        <option value="$PROJECT_DIR$/src/VersionControl/VersionControlService.php" />
+        <option value="$PROJECT_DIR$/src/VersionControl/VersionControlUrlCommand.php" />
+        <option value="$PROJECT_DIR$/src/VersionControl/VersionControlAdapter.php" />
+        <option value="$PROJECT_DIR$/src/VersionControl/GithubVersionControlAdapter.php" />
+        <option value="$PROJECT_DIR$/src/ApiClient.php" />
         <option value="$PROJECT_DIR$/kernel.php" />
+        <option value="$PROJECT_DIR$/src/VersionControl/VersionControlAdapterFactory.php" />
+        <option value="$PROJECT_DIR$/src/GuzzleApiClient.php" />
       </list>
     </option>
   </component>
@@ -162,7 +178,13 @@
             <path>
               <item name="VersionControlDataPicker" type="b2602c69:ProjectViewProjectNode" />
               <item name="VersionControlDataPicker" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VersionControlDataPicker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VersionControlDataPicker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="VersionControl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VersionControlDataPicker" type="b2602c69:ProjectViewProjectNode" />
@@ -181,6 +203,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -188,6 +211,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/VersionControl" />
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
@@ -203,7 +227,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.VersionControlAdapterTest">
+  <component name="RunManager" selected="PHPUnit.Test">
+    <configuration name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/kernel.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test.test_parameters_valid_number" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/kernel.php" method="test_parameters_valid_number" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="VersionControlAdapterTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="VersionControlAdapterTest" file="$PROJECT_DIR$/test/VersionControlAdapterTest.php" scope="Class" />
       <method v="2" />
@@ -214,6 +246,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.Test" />
+        <item itemvalue="PHPUnit.Test.test_parameters_valid_number" />
         <item itemvalue="PHPUnit.VersionControlAdapterTest" />
         <item itemvalue="PHPUnit.VersionControlAdapterTest.testValidResponse" />
       </list>
@@ -229,20 +263,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581250448805</updated>
-      <workItem from="1581250450190" duration="25179000" />
+      <workItem from="1581250450190" duration="33570000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 14m 04s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest_testValidResponse - 2020.02.09 at 19h 15m 24s.xml">
-      <configuration name="VersionControlAdapterTest.testValidResponse" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 15m 26s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 19m 00s.xml">
       <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -264,22 +289,31 @@
     <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 28m 02s.xml">
       <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Test - 2020.02.10 at 19h 22m 22s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test_test_parameters_valid_number - 2020.02.10 at 19h 22m 41s.xml">
+      <configuration name="Test.test_parameters_valid_number" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2020.02.10 at 19h 23m 45s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25179000" />
+    <option name="totallyTimeSpent" value="33570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49919224" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50080776" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
@@ -297,8 +331,8 @@
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49919224" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50080776" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -409,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/VersionControlAdapterTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -457,38 +484,82 @@
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/VersionControlUrlCommand.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VersionControlService.php">
+    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="2595">
+          <caret line="179" column="28" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VersionControlAdapter.php">
+    <entry file="file://$PROJECT_DIR$/src/VersionControl/GithubVersionControlAdapter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GithubVersionControlAdapter.php">
+    <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlAdapter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="e#86#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlUrlCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApiClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        <state relative-caret-position="265">
+          <caret line="139" column="33" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
+          <folding>
+            <element signature="e#77#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VersionControl/VersionControlAdapterFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GuzzleApiClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="e#49#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,13 +2,17 @@
 
 declare(strict_types=1);
 
+namespace src\VersionControl;
+
+use ApiClient;
+
 class GithubVersionControlAdapter extends VersionControlAdapter
 {
     private $baseUrl = 'https://api.github.com/repos';
     private $branches = 'branches';
 
     public function __construct(
-        \GuzzleHttp\Client $apiClient,
+        ApiClient $apiClient,
         string $login,
         string $repo,
         string $branch
@@ -34,7 +38,13 @@ class GithubVersionControlAdapter extends VersionControlAdapter
         );
 
         $query = $this->query($this->fullUrl);
+        $commitSha = $this->parseResponse($query);
 
-        var_dump($query->getBody()); die;
+        return $quer;
+    }
+
+    public function parseResponse()
+    {
+
     }
 }

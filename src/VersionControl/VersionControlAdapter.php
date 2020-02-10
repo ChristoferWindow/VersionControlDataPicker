@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+namespace src\VersionControl;
+
+use InvalidResponse;
 use Psr\Http\Message\ResponseInterface;
 
 abstract class VersionControlAdapter
@@ -37,7 +40,7 @@ abstract class VersionControlAdapter
     protected $branch;
 
     public function __construct(
-        GuzzleHttp\Client $apiClient,
+        ApiClient $apiClient,
         string $login,
         string $repo,
         string $branch
@@ -62,7 +65,7 @@ abstract class VersionControlAdapter
     {
         try {
             return $this->apiClient->request($method, $url);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             throw new InvalidResponse($e->getMessage(), $e->getCode());
         }
     }

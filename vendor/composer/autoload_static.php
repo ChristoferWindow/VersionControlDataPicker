@@ -40,6 +40,10 @@ class ComposerStaticInit1a427aa113ebb7c8c8d6d80da6e8762f
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
         ),
+        'M' => 
+        array (
+            'MyCLabs\\Enum\\' => 13,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -95,6 +99,10 @@ class ComposerStaticInit1a427aa113ebb7c8c8d6d80da6e8762f
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
+        'MyCLabs\\Enum\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myclabs/php-enum/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
