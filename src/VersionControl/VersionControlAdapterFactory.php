@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-namespace src\VersionControl;
+namespace VersionControl;
 
 use ApiClient;
 
 /**
  * Class VersionControlAdapterFactory
+ * @package VersionControl
  */
 class VersionControlAdapterFactory
 {

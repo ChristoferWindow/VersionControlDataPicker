@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+/**
+ * Class InvalidResponse
+ */
 class InvalidResponse extends Exception
 {
     public function __construct($message, $code = 0, Exception $previous = null) {

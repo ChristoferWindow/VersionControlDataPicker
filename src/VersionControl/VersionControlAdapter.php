@@ -2,15 +2,19 @@
 
 declare(strict_types=1);
 
-namespace src\VersionControl;
+namespace VersionControl;
 
-use InvalidResponse;
+use ApiClient;
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * Class VersionControlAdapter
+ * @package VersionControl
+ */
 abstract class VersionControlAdapter
 {
     /**
-     * @var \GuzzleHttp\Client
+     * @var ApiClient
      */
     protected $apiClient;
 
@@ -54,19 +58,5 @@ abstract class VersionControlAdapter
     public function getLatestCommitSha(): string{}
     public function createUrl(VersionControlUrlCommand $command): string {}
     protected function parseResponse(ResponseInterface $response){}
-
-    /**
-     * @param string $method
-     * @param string $url
-     * @return ResponseInterface
-     * @throws InvalidResponse
-     */
-    public function query(string $url, string $method = 'GET'): ResponseInterface
-    {
-        try {
-            return $this->apiClient->request($method, $url);
-        } catch (\Exception $e) {
-            throw new InvalidResponse($e->getMessage(), $e->getCode());
-        }
-    }
+    public function query(string $url, string $method = 'GET'): ResponseInterface{}
 }

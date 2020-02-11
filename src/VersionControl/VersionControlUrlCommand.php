@@ -2,8 +2,12 @@
 
 declare(strict_types=1);
 
-namespace src\VersionControl;
+namespace VersionControl;
 
+/**
+ * Class VersionControlUrlCommand
+ * @package VersionControl
+ */
 class VersionControlUrlCommand
 {
     /**

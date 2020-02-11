@@ -4,9 +4,16 @@ declare(strict_types=1);
 
 set_exception_handler('exceptionHandler');
 
+require 'vendor/autoload.php';
+
+spl_autoload_register(function($className) {
+    $className = str_replace("\\", DIRECTORY_SEPARATOR, $className);
+    include_once __DIR__ . '/src/' . $className . '.php';
+});
+
 use GuzzleHttp\Client;
-use src\GuzzleApiClient;
-use src\VersionControl\VersionControlAdapterFactory;
+use VersionControl\VersionControlAdapterFactory;
+
 
 /**
  * Position in argv array, omitting file name at 0 index
@@ -43,7 +50,7 @@ if (!isCorrectArgumentsNumber($argumentsCount)) {
 }
 
 /**
- * If service=xxx option passed, increase index and omit 1 position
+ * If service=xxx option passed, remove it from stack
  */
 if (!empty($service)) {
     array_shift($arguments);
@@ -94,7 +101,7 @@ if ($isServiceOption) {
 }
 
 if(in_array($versionControlName, AVAILABLE_VERSION_CONTROL_SERVICES)) {
-  getLatestCommitSha($versionControlName, $login, $repo, $branch);
+  print getLatestCommitSha($versionControlName, $login, $repo, $branch);
 } else {
     throw new Exception('Not found version control: ' . $versionControlName);
 }
@@ -137,8 +144,8 @@ function exceptionHandler($exception): void
 
 function getLatestCommitSha(string $versionControlName, string $login, string $repo, string $branch): string
 {
-     $factory  = new VersionControlAdapterFactory(new GuzzleApiClient(new Client()),$login, $repo, $branch);
+     $factory  = new VersionControlAdapterFactory(new GuzzleApiClient(new Client(['exceptions' => false])), $login, $repo, $branch);
      $versionControl = $factory->createByName($versionControlName);
 
-     print $versionControl->getLatestCommitSha();
+     return $versionControl->getLatestCommitSha();
 }
