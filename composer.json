@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/console": "^4.4",
+        "myclabs/php-enum": "^1.7"
+    }
+}
