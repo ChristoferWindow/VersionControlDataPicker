@@ -2,66 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be737a55-0f61-43f5-9789-fcf23ba3dabd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VersionControlDataPicker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VersionControlDataPicker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InvalidResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InvalidResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApiClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApiClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GuzzleApiClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuzzleApiClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VersionControl/GithubVersionControlAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/GithubVersionControlAdapter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VersionControl/VersionControlAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlAdapter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VersionControl/VersionControlAdapterFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlAdapterFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VersionControl/VersionControlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VersionControl/VersionControlUrlCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VersionControl/VersionControlUrlCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/easy-coding-standard.neon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Description.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Description.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/DescriptionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/DescriptionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/ExampleFinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/ExampleFinder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Serializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Serializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/StandardTagFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/TagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/TagFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/BaseTag.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/BaseTag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Covers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Covers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Deprecated.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Deprecated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Example.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Example.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Factory/StaticMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Factory/StaticMethod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Factory/Strategy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/AlignFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/AlignFormatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/PassthroughFormatter.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Formatter/PassthroughFormatter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Generic.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Generic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Link.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Method.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Param.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Param.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/PropertyRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/PropertyRead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/PropertyWrite.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/PropertyWrite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Reference/Fqsen.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Reference/Fqsen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Reference/Reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Reference/Reference.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Reference/Url.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Reference/Url.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Return_.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Return_.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/See.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/See.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Since.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Since.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Source.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Source.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/TagWithType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/TagWithType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Throws.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Throws.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Uses.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Uses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Var_.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Var_.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Version.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Version.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/symfony/service-contracts/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/service-contracts/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/VersionControlAdapterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/VersionControlAdapterTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +87,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.Test">
+  <component name="RunManager" selected="PHPUnit.VersionControlAdapterTest.testInvalidResponse">
     <configuration name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Test" file="$PROJECT_DIR$/kernel.php" scope="Class" />
       <method v="2" />
@@ -157,12 +100,17 @@
       <TestRunner class="VersionControlAdapterTest" file="$PROJECT_DIR$/test/VersionControlAdapterTest.php" scope="Class" />
       <method v="2" />
     </configuration>
+    <configuration name="VersionControlAdapterTest.testInvalidResponse" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="VersionControlAdapterTest" file="$PROJECT_DIR$/test/VersionControlAdapterTest.php" method="testInvalidResponse" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="VersionControlAdapterTest.testValidResponse" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="VersionControlAdapterTest" file="$PROJECT_DIR$/test/VersionControlAdapterTest.php" method="testValidResponse" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.VersionControlAdapterTest.testInvalidResponse" />
         <item itemvalue="PHPUnit.Test" />
         <item itemvalue="PHPUnit.Test.test_parameters_valid_number" />
         <item itemvalue="PHPUnit.VersionControlAdapterTest" />
@@ -183,38 +131,6 @@
       <workItem from="1581250450190" duration="33570000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 19m 00s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 20m 55s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 21m 29s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 26m 58s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 27m 06s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 27m 10s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="VersionControlAdapterTest - 2020.02.09 at 19h 28m 02s.xml">
-      <configuration name="VersionControlAdapterTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Test - 2020.02.10 at 19h 22m 22s.xml">
-      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Test_test_parameters_valid_number - 2020.02.10 at 19h 22m 41s.xml">
-      <configuration name="Test.test_parameters_valid_number" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Test - 2020.02.10 at 19h 23m 45s.xml">
-      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

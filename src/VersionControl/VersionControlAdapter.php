@@ -58,5 +58,4 @@ abstract class VersionControlAdapter
     public function getLatestCommitSha(): string{}
     public function createUrl(VersionControlUrlCommand $command): string {}
     protected function parseResponse(ResponseInterface $response){}
-    public function query(string $url, string $method = 'GET'): ResponseInterface{}
 }
